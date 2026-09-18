@@ -1,0 +1,6 @@
+const scenes=[...document.querySelectorAll('.scene')];function show(id){scenes.forEach(s=>s.classList.toggle('active',s.id===id))}
+document.querySelector('#enter').onclick=()=>{document.body.classList.add('corrupt');setTimeout(()=>{document.body.classList.remove('corrupt');show('breach')},650)}
+const field=document.querySelector('#memoryField');for(let i=0;i<18;i++){let m=document.createElement('i');m.className='memory';m.style.left=(Math.random()*90)+'%';m.style.top=(15+Math.random()*80)+'%';m.style.setProperty('--r',(Math.random()*40-20)+'deg');m.style.setProperty('--d',(3+Math.random()*5)+'s');field.appendChild(m)}
+document.querySelector('#breakReality').onclick=()=>{document.body.classList.add('corrupt');setTimeout(()=>{document.body.classList.remove('corrupt');show('system')},900)}
+document.querySelector('#restore').onclick=()=>{show('opening');document.querySelector('#opening .sub').textContent='REALITY RESTORED.';document.querySelector('#enter').style.display='none';setTimeout(()=>{document.body.classList.add('corrupt');setTimeout(()=>{document.body.classList.remove('corrupt');show('finale')},500)},2600)}
+document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>document.querySelector('#'+b.dataset.open).classList.add('show'));document.querySelectorAll('.close').forEach(b=>b.onclick=()=>b.parentElement.classList.remove('show'));
