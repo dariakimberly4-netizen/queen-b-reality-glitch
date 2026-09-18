@@ -1,34 +1,6 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Queen B — Reality Glitch</title><link rel="stylesheet" href="style.css"></head>
-<body>
-<div id="noise"></div>
-<main id="world">
-<section id="opening" class="scene active">
-  <div class="crown" aria-hidden="true">♛</div>
-  <p class="eyebrow">FOR BEAUX</p><h1>QUEEN B</h1>
-  <p class="sub">Everything is perfectly normal.</p>
-  <button id="enter">ENTER</button>
-</section>
-<section id="breach" class="scene">
- <div class="error">REALITY ERROR: B-100</div>
- <h2>Something is breaking through.</h2>
- <div id="memoryField" aria-label="Memory field"></div>
- <button id="breakReality">BREAK REALITY</button>
-</section>
-<section id="system" class="scene">
- <div class="terminal">
-  <p>RESTORING REALITY...</p><p class="fail">FAILED.</p>
-  <p>UNAUTHORIZED USER DETECTED.</p><p>IDENTITY: <b>BEAUX</b></p><p>STATUS: <b>QUEEN</b> 👑</p>
- </div>
- <button id="restore">RESTORE REALITY</button>
-</section>
-<section id="finale" class="scene">
- <div class="finalCrown">♛</div><p>100 MEMORIES FOUND</p><p>0 MEMORIES LOST</p><p>∞ MEMORIES YET TO COME</p>
- <h2>HAPPY BIRTHDAY,<br>QUEEN B</h2>
- <div class="slots"><button data-open="message">MY MESSAGE</button><button data-open="videos">VIDEOS</button></div>
- <div id="message" class="panel"><button class="close">×</button><h3>For Beaux</h3><p>This space is ready for Kimmy's personal birthday message.</p></div>
- <div id="videos" class="panel"><button class="close">×</button><h3>Birthday Videos</h3><p>Add your real video files to <b>assets/videos</b>, then we’ll connect them here.</p></div>
-</section>
-</main>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Queen B — Reality Has 100 Layers</title><link rel="stylesheet" href="style.css"></head><body>
+<main id="world"><div id="stars"></div><section id="intro" class="screen active"><div class="crown">♛</div><p>QUEEN B</p><h1>REALITY HAS<br>100 LAYERS</h1><p class="whisper">Beaux, there’s something behind the screen.</p><button id="enter">ENTER REALITY</button></section>
+<section id="journey" class="screen"><div class="hud"><span>REALITY DEPTH</span><strong id="depth">001 / 100</strong></div><div id="tunnel"><div id="memory"></div><div class="rings"></div></div><div class="caption" id="caption">MEMORY 001</div><button id="deeper">HOLD TO GO DEEPER</button><div class="progress"><i id="bar"></i></div></section>
+<section id="core" class="screen"><div class="crown corecrown">♛</div><h2>REALITY DEPTH: 100 / 100</h2><p>100 MEMORIES FOUND<br>0 MEMORIES LOST</p><div class="last">THERE IS ONE THING<br>A PHOTOGRAPH COULDN'T HOLD.</div><button id="break">BREAK THROUGH</button></section>
+<section id="videoEnd" class="screen"><video id="finalVideo" controls playsinline></video><div id="videoMissing"><div class="crown">♛</div><h2>THE FINAL MEMORY</h2><p>Your one real birthday video belongs here.</p></div><div id="birthday"><h1>HAPPY BIRTHDAY,<br>QUEEN B 👑</h1><p>100 memories behind you.<br>An entire life still ahead.</p></div></section></main>
 <script src="script.js"></script></body></html>
